@@ -41,13 +41,13 @@ During validation, the `price_text` (e.g., `"£51.77"`) is normalized into `pric
 ## Sample Run Report
 ```json
 {
-  "start_time": "2023-10-25T14:00:00.000000Z",
-  "end_time": "2023-10-25T14:00:32.000000Z",
-  "duration_seconds": 32.5,
+  "start_time": "2026-08-16T05:52:20.216833Z",
+  "end_time": "2026-08-16T05:52:38.114066Z",
+  "duration_seconds": 17.897233,
   "catalogue_pages_discovered": 3,
   "total_urls_discovered": 60,
   "pages_fetched": 63,
-  "cache_hits": 0,
+  "cache_hits": 54,
   "valid_records": 60,
   "invalid_records": 0,
   "failed_pages": 0,
