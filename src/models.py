@@ -1,5 +1,5 @@
 from typing import Optional, List
-from pydantic import BaseModel, HttpUrl, Field, field_validator
+from pydantic import BaseModel, HttpUrl, Field, field_validator, AliasChoices
 from datetime import datetime
 
 class RawBookRecord(BaseModel):
@@ -16,7 +16,7 @@ class ValidatedBookRecord(BaseModel):
     title: str
     product_url: HttpUrl
     price_text: str
-    price_gbp: float
+    price_gbp: float = Field(validation_alias=AliasChoices('price_gbp', 'price_text'))
     availability_text: str
     rating_text: str
     description: Optional[str]
